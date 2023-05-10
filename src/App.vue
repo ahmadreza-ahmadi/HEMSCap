@@ -21,17 +21,10 @@ import '@/assets/global.css';
     <div class="container flex flex-col gap-4 sm:gap-6 px-3 py-4 sm:px-6 sm:py-0">
       <!-- Header -->
       <Header />
-      <main class="flex flex-col gap-4 sm:gap-6">
-        <!-- First Row -->
-        <div class="grid-wrapper grid grid-cols-3 w-full gap-4 sm:gap-6">
-          <DailyActivity />
-          <PackageInventory />
-        </div>
-        <!-- Second Row -->
-        <div class="flex flex-col sm:flex-row w-full gap-4 sm:gap-6">
-          <EvaluationPhysiotherapist />
-          <section class="bg-orange-200 flex-[5]">Chat Section</section>
-        </div>
+      <main class="sections-wrapper">
+        <DailyActivity />
+        <PackageInventory />
+        <EvaluationPhysiotherapist />
       </main>
     </div>
   </div>
