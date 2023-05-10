@@ -37,7 +37,7 @@
             <p class="package-inventory_unit">inventory</p>
           </div>
         </article>
-        <article class="package-inventory border-success-main">
+        <article class="package-inventory">
           <h3 class="package-inventory_title">conferance</h3>
           <div class="flex items-center">
             <svg class="mr-2" height="32" width="32" view-box="0 0 32 32">

@@ -3,16 +3,12 @@
 @tailwind utilities;
 
 @layer components {
-  .grid-wrapper:nth-of-type(1) {
-    grid-column: span 2 / span 2;
-  }
-
   .section_title-wrapper {
-    @apply flex justify-between items-center mb-3 sm: mb-6;
+    @apply flex justify-between items-center mb-3 sm:mb-6;
   }
 
   .section_title {
-    @apply text-lg sm: text-2xl font-semibold capitalize text-neutral-light-100;
+    @apply text-lg sm:text-2xl font-semibold capitalize text-neutral-light-100;
   }
 
   .section_view-button {
@@ -20,19 +16,19 @@
   }
 
   .daily-activity-card {
-    @apply flex flex-col flex-1 items-center bg-main-box p-3 sm: p-5 rounded-xl sm:rounded-2xl;
+    @apply flex flex-col flex-1 items-center bg-main-box p-3 sm:p-5 rounded-xl sm:rounded-2xl;
   }
 
   .daily-activity-card_img {
-    @apply mb-1 sm: mb-2 w-20 sm:w-24;
+    @apply mb-1 sm:mb-2 w-20 sm:w-24;
   }
 
   .daily-activity-card_title {
-    @apply font-semibold text-lg sm: text-xl mb-1 capitalize;
+    @apply font-semibold text-lg sm:text-xl mb-1 capitalize;
   }
 
   .daily-activity-card_description {
-    @apply text-sm text-neutral-light-60 mb-4 sm: mb-7 capitalize;
+    @apply text-sm text-neutral-light-60 mb-4 sm:mb-7 capitalize;
   }
 
   .daily-activity-card_button {
@@ -44,7 +40,7 @@
   }
 
   .package-inventory_title {
-    @apply text-lg sm: text-xl font-semibold mb-3 sm:mb-6 text-neutral-light-80 capitalize;
+    @apply text-lg sm:text-xl font-semibold mb-3 sm:mb-6 text-neutral-light-80 capitalize;
   }
 
   .package-inventory_unit {
@@ -56,16 +52,16 @@
   }
 
   .table_header {
-    @apply font-medium sm: text-lg inline-block capitalize;
+    @apply font-medium sm:text-lg inline-block capitalize;
   }
 }
 
-/* @layer utilities {
+@layer utilities {
   .sections-wrapper {
-    @apply grid grid-cols-3
+    @apply grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6;
   }
 
   .sections-wrapper>section:nth-child(odd) {
-    @apply bg-balck
+    @apply md:col-span-2;
   }
-} */
+}
